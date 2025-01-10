@@ -7,10 +7,13 @@ export default function (
     shadowRootMode: "open" | "closed";
     minifyOptions: MinifyOptions;
   }>,
-) {
+): {
+  name: string;
+  transform(code: string, id: string): Promise<string | undefined>;
+} {
   return {
     name: "rollup-plugin-html-template",
-    async transform(code: string, id: string) {
+    async transform(code: string, id: string): Promise<string | undefined> {
       if (id.endsWith(".template.html")) {
         const html = await minify(
           code,
