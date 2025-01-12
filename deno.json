@@ -5,5 +5,9 @@
   "exports": "./mod.ts",
   "imports": {
     "html-minifier-terser": "npm:html-minifier-terser@^7.2.0"
+  },
+  "compilerOptions": {
+    "lib": ["dom", "esnext"],
+    "typeRoots": ["./declarations.d.ts"]
   }
 }

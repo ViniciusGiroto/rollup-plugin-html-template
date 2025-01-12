@@ -1,3 +1,4 @@
+/// <reference types="./declarations.d.ts" />
 import { minify } from "html-minifier-terser";
 
 type MinifyOptions = (minify extends (...args: infer U) => any ? U : never)[1];
