@@ -1,7 +1,7 @@
-/// <reference types="./declarations.d.ts" />
-import { minify } from "html-minifier-terser";
+import { minify } from "npm:html-minifier-terser";
 
-type MinifyOptions = (minify extends (...args: infer U) => any ? U : never)[1];
+type MinifyOptions =
+  (typeof minify extends (...args: infer U) => any ? U : never)[1];
 
 export default function (
   config?: Partial<{
