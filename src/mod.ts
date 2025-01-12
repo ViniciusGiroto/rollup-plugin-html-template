@@ -1,4 +1,4 @@
-import { minify } from "npm:html-minifier-terser";
+import { minify } from "npm:html-minifier-terser@^7.2.0";
 
 type MinifyOptions =
   (typeof minify extends (...args: infer U) => any ? U : never)[1];

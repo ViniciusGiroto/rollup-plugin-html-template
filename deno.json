@@ -1,6 +1,6 @@
 {
   "name": "@giroto/rollup-plugin-html-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "GPLv3",
   "exports": "./src/mod.ts",
   "compilerOptions": {
